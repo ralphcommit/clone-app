@@ -1,0 +1,8 @@
+{
+  "name": "paypal-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "c662c9d3"
+}

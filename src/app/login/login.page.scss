@@ -1,0 +1,124 @@
+ion-header, ion-toolbar {
+  --background: #0070ba !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+ion-title {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+ion-content {
+  background: #f0f2f5;
+}
+
+ion-card {
+  margin: 32px auto 0 auto;
+  padding: 28px 20px 32px 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,112,186,0.08);
+  border: 1px solid #e0e3eb;
+  max-width: 400px;
+}
+
+ion-item {
+  --background: #f5f7fa !important;
+  background: #f5f7fa !important;
+  border-radius: 8px;
+  margin: 12px 0;
+  box-shadow: 0 1px 4px rgba(0,112,186,0.04);
+}
+ion-label {
+  color: #000 !important;
+  font-weight: 600;
+}
+ion-input, ion-input input, input, .native-input {
+  color: #222 !important;
+  background: transparent !important;
+  caret-color: #003087 !important;
+}
+
+ion-button {
+  margin-top: 18px;
+  background: #0070ba;
+  --background: #0070ba;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,112,186,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+ion-button:hover {
+  background: #003087;
+  --background: #003087;
+  color: #fff;
+}
+
+ion-button[color="light"] {
+  --background: #fff;
+  --color: #0070ba;
+  border: 1px solid #0070ba;
+}
+
+/* Placeholder color for all browsers */
+ion-input::part(native-input)::placeholder,
+input::placeholder,
+.native-input::placeholder {
+  color: #888 !important;
+  opacity: 1 !important;
+}
+
+ion-item.ion-focused {
+  border: 1.5px solid #0070ba !important;
+  box-shadow: 0 0 0 2px #e6f0fa;
+}
+
+// Accessibility: Increase contrast for error messages and add focus style for accessibility
+.error-message, .error {
+  color: #d93025 !important;
+  font-weight: 600;
+  background: #fffbe6;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 8px 0 0 0;
+  font-size: 1em;
+}
+
+// Focus outline for all interactive elements
+ion-input:focus, input:focus, ion-button:focus {
+  outline: 2px solid #003087 !important;
+  outline-offset: 2px;
+}
+
+// Visually hidden class for accessibility
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+// PayPal-like divider style
+.divider {
+  border-bottom: 1px solid #e0e3eb;
+  margin: 18px 0;
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+  ion-card {
+    margin: 16px 4px 0 4px;
+    padding: 18px 8px 22px 8px;
+    max-width: 98vw;
+  }
+  ion-title {
+    font-size: 1.2em;
+  }
+  ion-button {
+    font-size: 1em;
+  }
+}

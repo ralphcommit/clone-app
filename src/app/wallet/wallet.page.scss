@@ -1,0 +1,89 @@
+// PayPal-like wallet page theme
+.wallet-container {
+  background: #f0f2f5;
+  min-height: 100vh;
+  padding: 0 0 80px 0;
+}
+
+ion-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,112,186,0.08);
+  border: 1px solid #e0e3eb;
+  margin-bottom: 24px;
+  padding: 24px 18px 32px 18px;
+}
+
+.balance-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.balance-info ion-label {
+  font-size: 32px;
+  font-weight: bold;
+  color: #003087;
+}
+
+.balance-info p {
+  color: #666;
+  margin-top: 5px;
+}
+
+ion-item {
+  --background: #f5f7fa;
+  background: #f5f7fa;
+  border-radius: 8px;
+  margin: 12px 0;
+  box-shadow: 0 1px 4px rgba(0,112,186,0.04);
+  font-size: 16px;
+}
+ion-item ion-label {
+  font-weight: 600;
+  color: #000 !important;
+}
+
+.paypal-tabs-bar {
+  background: #fff !important;
+}
+
+ion-tab-bar {
+  --background: #fff !important;
+  background: #fff !important;
+  border-top: 1px solid #e0e3eb;
+  height: 60px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ion-tab-button {
+  color: #222;
+  --color-selected: #0070ba;
+  font-size: 0.93em;
+  background: transparent;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+ion-tab-button[aria-selected="true"] {
+  background: #e6f0fa;
+  color: #0070ba;
+}
+
+ion-button {
+  background: #0070ba;
+  --background: #0070ba;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,112,186,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+ion-button:hover {
+  background: #003087;
+  --background: #003087;
+  color: #fff;
+}
+

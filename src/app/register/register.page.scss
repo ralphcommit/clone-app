@@ -1,0 +1,98 @@
+ion-header, ion-toolbar {
+  --background: #0070ba;
+}
+
+ion-title {
+  color: #fff;
+}
+
+ion-content {
+  background: #f0f2f5;
+}
+
+ion-item {
+  margin-bottom: 15px;
+  --background: #f5f7fa;
+  background: #f5f7fa;
+  border-radius: 8px;
+  margin: 12px 0;
+  box-shadow: 0 1px 4px rgba(0,112,186,0.04);
+}
+
+ion-label {
+  font-weight: 600;
+  color: #000 !important;
+}
+
+ion-input {
+  color: #222;
+  font-size: 1.05em;
+  background: transparent;
+}
+
+.paypal-register-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,112,186,0.08);
+  border: 1px solid #e0e3eb;
+  margin: 32px auto 0 auto;
+  padding: 28px 20px 32px 20px;
+  max-width: 400px;
+}
+
+ion-card {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+ion-button {
+  margin-top: 20px;
+  --background: #0070ba;
+  --background-hover: #003087;
+  --color: #fff;
+  margin-top: 18px;
+  background: #0070ba;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,112,186,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+ion-button:hover {
+  background: #003087;
+  --background: #003087;
+  color: #fff;
+}
+
+ion-button[color="light"] {
+  --background: #fff;
+  --color: #0070ba;
+  border: 1px solid #0070ba;
+}
+
+ion-item ion-label, ion-item ion-input, ion-input, input {
+  color: #000 !important;
+}
+
+.paypal-link-btn {
+  background: none;
+  border: none;
+  color: #0070ba;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 12px 0;
+  width: 100%;
+  text-align: center;
+  transition: color 0.2s;
+}
+.paypal-link-btn:hover,
+.paypal-link-btn:focus {
+  color: #003087;
+  text-decoration: underline;
+}

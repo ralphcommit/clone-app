@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Currency Exchange</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="paypal-exchange-bg">
+  <ion-card class="paypal-exchange-card">
+    <form (ngSubmit)="convert()">
+      <ion-item>
+        <ion-label position="stacked">From</ion-label>
+        <ion-select [(ngModel)]="fromCurrency" name="fromCurrency" required>
+          <ion-select-option value="USD">USD</ion-select-option>
+          <ion-select-option value="PHP">PHP</ion-select-option>
+          <ion-select-option value="EUR">EUR</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">To</ion-label>
+        <ion-select [(ngModel)]="toCurrency" name="toCurrency" required>
+          <ion-select-option value="PHP">PHP</ion-select-option>
+          <ion-select-option value="USD">USD</ion-select-option>
+          <ion-select-option value="EUR">EUR</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Amount</ion-label>
+        <ion-input type="number" [(ngModel)]="amount" name="amount" required></ion-input>
+      </ion-item>
+      <ion-button expand="full" type="submit" [disabled]="!fromCurrency || !toCurrency || !amount">
+        Convert
+      </ion-button>
+    </form>
+    <div *ngIf="result !== null" class="exchange-result">
+      <p>{{ amount }} {{ fromCurrency }} = <b>{{ result }}</b> {{ toCurrency }}</p>
+    </div>
+  </ion-card>
+</ion-content>

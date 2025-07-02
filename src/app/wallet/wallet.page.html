@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Wallet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Balance</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="balance-info">
+        <ion-label>₱ 0.00</ion-label>
+        <p>Balance</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>Banks and cards</ion-label>
+    <ion-button slot="end" fill="clear">Add new</ion-button>
+  </ion-item>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Add banks and cards</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Link cards to shop and pay with PayPal, and link banks to withdraw from your PayPal balance.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>Preferences</ion-label>
+    <ion-button slot="end" fill="clear">Online purchases</ion-button>
+  </ion-item>
+</ion-content>
+
+<!-- Persistent Bottom Tab Bar -->
+<div class="paypal-tabs-bar">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="send-request" class="center-tab" routerLink="/send-request">
+      <ion-icon name="swap-vertical-outline"></ion-icon>
+      <ion-label>Send/Request</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="wallet" routerLink="/wallet">
+      <ion-icon name="wallet-outline"></ion-icon>
+      <ion-label>Wallet</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</div>
